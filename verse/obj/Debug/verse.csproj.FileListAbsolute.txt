@@ -1,0 +1,9 @@
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\bin\Debug\verse.exe.config
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\bin\Debug\verse.exe
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\bin\Debug\verse.pdb
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.csprojResolveAssemblyReference.cache
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.Properties.Resources.resources
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.csproj.GenerateResource.Cache
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.exe
+c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.pdb
+C:\Users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.Form1.resources
