@@ -54,16 +54,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ShortcutsEnabled = false;
-            this.textBox1.Size = new System.Drawing.Size(260, 177);
+            this.textBox1.Size = new System.Drawing.Size(260, 168);
             this.textBox1.TabIndex = 0;
             this.textBox1.TabStop = false;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(171, 222);
+            this.button1.Location = new System.Drawing.Point(171, 224);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 23);
+            this.button1.Size = new System.Drawing.Size(56, 25);
             this.button1.TabIndex = 3;
             this.button1.Text = "Previous";
             this.button1.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(233, 223);
+            this.button2.Location = new System.Drawing.Point(233, 224);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 23);
+            this.button2.Size = new System.Drawing.Size(39, 25);
             this.button2.TabIndex = 4;
             this.button2.Text = "Next";
             this.button2.UseVisualStyleBackColor = true;
@@ -86,9 +86,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(128, 223);
+            this.button3.Location = new System.Drawing.Point(128, 224);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(37, 23);
+            this.button3.Size = new System.Drawing.Size(37, 25);
             this.button3.TabIndex = 7;
             this.button3.Text = "Go";
             this.button3.UseVisualStyleBackColor = true;
@@ -96,6 +96,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "আল ফাতিহা",
@@ -212,16 +213,16 @@
             "এখলাছ",
             "ফালাক্ব",
             "নাস"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 196);
+            this.comboBox1.Location = new System.Drawing.Point(12, 186);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(260, 21);
+            this.comboBox1.Size = new System.Drawing.Size(260, 32);
             this.comboBox1.TabIndex = 8;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // myCustomNumericBox2
             // 
             this.myCustomNumericBox2.Font = new System.Drawing.Font("Inconsolata", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myCustomNumericBox2.Location = new System.Drawing.Point(72, 221);
+            this.myCustomNumericBox2.Location = new System.Drawing.Point(72, 224);
             this.myCustomNumericBox2.Maximum = new decimal(new int[] {
             500,
             0,
@@ -247,7 +248,7 @@
             // 
             this.myCustomNumericBox1.Font = new System.Drawing.Font("Inconsolata", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myCustomNumericBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.myCustomNumericBox1.Location = new System.Drawing.Point(12, 221);
+            this.myCustomNumericBox1.Location = new System.Drawing.Point(12, 224);
             this.myCustomNumericBox1.Maximum = new decimal(new int[] {
             114,
             0,

@@ -7,3 +7,11 @@ c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\vers
 c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.exe
 c:\users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.pdb
 C:\Users\mahmud\documents\visual studio 2015\Projects\verse\verse\obj\Debug\verse.Form1.resources
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\bin\Debug\verse.exe.config
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\bin\Debug\verse.exe
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\bin\Debug\verse.pdb
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\obj\Debug\verse.Form1.resources
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\obj\Debug\verse.Properties.Resources.resources
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\obj\Debug\verse.csproj.GenerateResource.Cache
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\obj\Debug\verse.exe
+C:\Users\mahmud\Documents\git\VerseViewerWindows\verse\obj\Debug\verse.pdb
