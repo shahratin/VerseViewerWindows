@@ -72,8 +72,6 @@ namespace verse
                     myCustomNumericBox2.Value++;
                     textBox1.Text = Program.Get.verse(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
             }
-           
-
         }
 
         private void myCustomNumericBox2_ValueChanged_1(object sender, EventArgs e)
@@ -91,6 +89,5 @@ namespace verse
             myCustomNumericBox1.Value = comboBox1.SelectedIndex + 1;
             myCustomNumericBox2.Value = 1;
         }
-
     }
 }
