@@ -10,7 +10,7 @@ namespace verse
     {
         public MyCustomNumericBox()
         {
-            Controls[0].Visible = false;
+            Controls.Remove(Controls[0]);
         }
     }
     
@@ -24,9 +24,7 @@ namespace verse
                 string[] lines = new string[6236];
                 string line;
                 int i = 0;
-                //string file = global::verse.Properties.Resources.bengali;
                 System.IO.StringReader file = new System.IO.StringReader(global::verse.Properties.Resources.bengali);
-                //string filecontent = global::verse.Properties.Resources.bengali;
                 while ((line = (file.ReadLine())) != null)
                 {
                    lines[i] = line;

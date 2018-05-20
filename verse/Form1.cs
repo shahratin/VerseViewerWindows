@@ -18,6 +18,7 @@ namespace verse
             InitializeComponent();
             textBox1.Text = Program.Get.verse(1,1);
             comboBox1.SelectedIndex = (int)myCustomNumericBox1.Value - 1;
+            myCustomNumericBox2.Maximum = Program.Get.vCount(myCustomNumericBox1.Value);
         }
         
 

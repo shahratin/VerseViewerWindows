@@ -30,6 +30,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -222,7 +223,7 @@
             // myCustomNumericBox2
             // 
             this.myCustomNumericBox2.Font = new System.Drawing.Font("Inconsolata", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.myCustomNumericBox2.Location = new System.Drawing.Point(72, 224);
+            this.myCustomNumericBox2.Location = new System.Drawing.Point(70, 224);
             this.myCustomNumericBox2.Maximum = new decimal(new int[] {
             500,
             0,
@@ -234,9 +235,9 @@
             0,
             0});
             this.myCustomNumericBox2.Name = "myCustomNumericBox2";
-            this.myCustomNumericBox2.Size = new System.Drawing.Size(50, 25);
+            this.myCustomNumericBox2.Size = new System.Drawing.Size(52, 25);
             this.myCustomNumericBox2.TabIndex = 6;
-            this.myCustomNumericBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myCustomNumericBox2.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.myCustomNumericBox2.Value = new decimal(new int[] {
             1,
             0,
@@ -260,9 +261,9 @@
             0,
             0});
             this.myCustomNumericBox1.Name = "myCustomNumericBox1";
-            this.myCustomNumericBox1.Size = new System.Drawing.Size(54, 25);
+            this.myCustomNumericBox1.Size = new System.Drawing.Size(52, 25);
             this.myCustomNumericBox1.TabIndex = 5;
-            this.myCustomNumericBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.myCustomNumericBox1.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left;
             this.myCustomNumericBox1.Value = new decimal(new int[] {
             1,
             0,
@@ -282,9 +283,10 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Verse";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.myCustomNumericBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.myCustomNumericBox1)).EndInit();
