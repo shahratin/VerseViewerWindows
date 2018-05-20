@@ -13,15 +13,32 @@ namespace verse
 
     public partial class Form1 : Form
     {
-        //Get b = new Get(new System.IO.StreamReader("c:/Users/mahmud/Documents/en.yusufali.txt"));
-        Get b = new Get(verse.Properties.Resources.bengali);
+        //Program.getText(verse.Properties.Resources.bengali);
+        //static List<verse.Text> texts = new List<verse.Text>();
+        static Text e = new Text(new System.IO.StreamReader("c:/Users/mahmud/Documents/en.yusufali.txt"));
+        static Text b = new Text(verse.Properties.Resources.bengali);
+        static Text[] texts = {b,e};
         
+        
+        static void update(decimal v, decimal s)
+        {
+
+            for(int i = 0; i < texts.Length; i++)
+            {
+                texts[i].update(v, s);
+            }
+        }
 
         public Form1()
         {
             
             InitializeComponent();
-            textBox1.Text = b.lines[Get.verseNo(1,1)];
+            //textBox1.Text = b.lines[Get.verseNo(1,1)];
+            //this.Controls.Add(b.t);
+            for(int i = 0; i < texts.Length; i++)
+            {
+                this.Controls.Add(texts[i].t);
+            }
             comboBox1.SelectedIndex = (int)myCustomNumericBox1.Value - 1;
             myCustomNumericBox2.Maximum = Get.vCount(myCustomNumericBox1.Value);
         }
@@ -40,7 +57,8 @@ namespace verse
         {
             myCustomNumericBox2.Maximum = Get.vCount(myCustomNumericBox1.Value);
             myCustomNumericBox2.Value = 1;
-            textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+            //textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+            update(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
             comboBox1.SelectedIndex = (int)myCustomNumericBox1.Value - 1;
         }
 
@@ -53,13 +71,15 @@ namespace verse
                 {
                     myCustomNumericBox1.Value--;
                     myCustomNumericBox2.Value = Get.vCount(myCustomNumericBox1.Value);
-                    textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                   //textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                    update(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
                 }
             }
             else
             {
                 myCustomNumericBox2.Value--;
-                textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                //textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                update(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
             }
         }
 
@@ -69,24 +89,28 @@ namespace verse
                 if (myCustomNumericBox1.Value < 114) {
                     myCustomNumericBox1.Value++;
                     myCustomNumericBox2.Value = 1;
-                    textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                    //textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                    update(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
                 }
             }
             else
             {
                     myCustomNumericBox2.Value++;
-                    textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                    //textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                    update(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
             }
         }
 
         private void myCustomNumericBox2_ValueChanged_1(object sender, EventArgs e)
         {
-            textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+            //textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+            update(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-                textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                //textBox1.Text = b.lines[Get.verseNo(myCustomNumericBox1.Value, myCustomNumericBox2.Value)];
+                update(myCustomNumericBox1.Value, myCustomNumericBox2.Value);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
